@@ -29,7 +29,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run unit tests (coverage gate >= 80%)
-        run: pytest --cov=cowokkit --cov-report=term-missing --cov-fail-under=80
+        run: python -m pytest --cov=cowokkit --cov-report=term-missing --cov-fail-under=80
 
   sast-scan:
     name: SAST Scan (Bandit) & Quality Gate
