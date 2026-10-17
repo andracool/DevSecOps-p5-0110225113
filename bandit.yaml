@@ -1,0 +1,2 @@
+# Konfigurasi Bandit: abaikan folder tests dan workflows
+exclude_dirs: ["tests", ".github"]
